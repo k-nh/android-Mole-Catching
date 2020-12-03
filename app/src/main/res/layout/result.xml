@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#428a47"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/scoreTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Score : "
+            android:textSize="35dp"
+            android:paddingLeft="80dp"
+            android:textStyle="bold"
+            android:textColor="#fed231">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_finalScore"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#fed231"
+            android:textSize="35dp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ly_saveid"
+        android:layout_below="@+id/scoreTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/id"
+            android:layout_marginLeft="20dp"
+            android:hint="Ranking에 등록할 ID를 입력하세요."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></EditText>
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:id="@+id/save"></Button>
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/Ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ranking"
+            android:textSize="40dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/ly_saveid"
+            android:textStyle="bold"></TextView>
+        <LinearLayout
+            android:layout_below="@+id/Ranking"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_rankid"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_rankscore"
+                android:textSize="40dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="replay"
+        android:textStyle="bold"
+        android:background="#fed231"></Button>
+
+</RelativeLayout>
